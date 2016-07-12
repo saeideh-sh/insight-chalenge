@@ -1,4 +1,4 @@
-# insight-chalenge
+# Median Graph Degree: insight-chalenge
 In this challenge I implemented calculating the median of the connectivity of the users in Venmo Payments. The code requires the following dependencies:
 
 from datetime import datetime
