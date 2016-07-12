@@ -7,12 +7,13 @@ import numpy as np # This package is called for Numerical analyses
 import statistics as st # This package is called for Statistical Analyses
 import networkx as nx # This package is called for Graph analysis
 import sys
-if len(sys.argv)<2:
+if len(sys.argv)<3:
     print "Usage: %s infile" % sys.argv[0]
     sys.exit(1)
 
-infile = sys.argv[0]
-outputfile = sys.argv[1]
+infile = sys.argv[1]
+print(infile)
+outputfile = sys.argv[2]
 #outputfile = '/Users/Saeideh/Dropbox/Coursera/Insight/output_test.txt'
 G = nx.Graph() # creating an empty graph
 window_time = 60 # 60-second window
@@ -75,4 +76,3 @@ with open(infile) as inf:
             dict_old = dict_new
         
         max_timestamp = max(dict_old[ct])
-
